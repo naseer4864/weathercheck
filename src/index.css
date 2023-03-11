@@ -87,6 +87,11 @@ form > input:focus {
   .weather-app > form > input {
     width: 80%;
   }
+
+  .weather > h2 {
+    font-size: 1.1rem;
+    padding: 0px 10px;
+  }
 }
 
 .weather {
