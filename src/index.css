@@ -37,7 +37,6 @@ body {
 .navbar > h2 {
   margin-right: 20px;
   color: white;
-  font-family: cursive;
 }
 .weather-app {
   width: 100%;
@@ -67,13 +66,14 @@ body {
 }
 
 form > input:focus {
-  zoom: 1;
+  scale: 1;
 }
 
 .weather-app > form > button {
   padding: 11px 20px;
   border-radius: 5px;
   cursor: pointer;
+  background-color: white;
 }
 
 @media screen and (max-width:650px) {
