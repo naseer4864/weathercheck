@@ -37,6 +37,7 @@ body {
 .navbar > h2 {
   margin-right: 20px;
   color: white;
+  color: black;
 }
 .weather-app {
   width: 100%;
