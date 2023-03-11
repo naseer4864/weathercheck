@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: url("./asset/background.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
+
+.weatherapp-container {
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(40, 53, 78);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar > img {
+  height: 40px;
+  margin-left: 30px;
+}
+
+.navbar > h2 {
+  margin-right: 20px;
+  color: white;
+  font-family: cursive;
+}
+.weather-app {
+  width: 100%;
+  height: fit-content;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.weather-app > form {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.weather-app > form > input {
+  width: 25%;
+  height: 40px;
+  padding: 10px;
+}
+
+form > input:focus {
+  zoom: 1;
+}
+
+.weather-app > form > button {
+  padding: 11px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:650px) {
+  .weather-app > form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .weather-app > form > input {
+    width: 80%;
+  }
+}
+
+.weather {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
