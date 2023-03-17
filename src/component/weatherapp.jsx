@@ -18,8 +18,9 @@ const WeatherApp = () => {
     } else {
       setSearchType('state');
     }
-
     setSearchTerm(inputValue);
+
+    event.target.elements.search.value = '';
   };
 
 
